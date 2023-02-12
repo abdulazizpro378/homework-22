@@ -1,0 +1,349 @@
+:root {
+  --aside-width: 250px;
+  --header-width: 80px;
+}
+
+* {
+  font-family: curs;
+}
+
+@font-face {
+  font-family: curs;
+  src: url(../fonts/CircularStd-Book.ttf);
+}
+
+aside {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  
+  top: var(--header-width);
+  border: 1px solid grey;
+  overflow-y: scroll;
+  width: 0;
+  background-color: var(--posion-color);
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  border: 1px solid grey;
+  border-bottom: none;
+  border-left: none;
+  align-items: center;
+
+  position: fixed;
+  height: var(--header-width);
+
+  width: 100%;
+  transition: 0.5s;
+  z-index: 2;
+  top: 0;
+}
+
+main,
+header {
+  left: var(--aside-width);
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  left: 0;
+}
+
+main {
+  position: relative;
+  left: 0;
+  top: var(--header-width);
+  transition: 0.5s;
+
+  height: calc(100vh - var(--header-width));
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+main::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+}
+
+main::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+main::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 10px;
+}
+
+aside::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+}
+aside::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+aside::-webkit-scrollbar-thumb {
+  background-color:grey;
+  border-radius: 10px;
+}
+
+/* start  style */
+
+.tittle {
+  background-color: #315fe9;
+  height: 80px;
+  border-radius: 7px;
+  
+  display: flex;
+  margin-top: -10px;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  margin-left: -12px;
+}
+
+.tittle a {
+  color: aliceblue;
+}
+.tittle a span {
+  margin-left: 5px;
+}
+
+.tittle i {
+  background-color: blue;
+  padding: 10px;
+  border-radius: 50%;
+}
+.title {
+  height: 100%;
+  width: 100%;
+}
+
+
+.sub {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-1 {
+  padding: 20px;
+  margin-top: 10px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.2s;
+  cursor: pointer;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(255, 1, 10, 0),
+      rgb(12, 26, 63)
+    ),
+    url(https://prium.github.io/grid/assets/img/group/pic-1.png);
+}
+
+.img-1:hover {
+  transform: scale(1.02);
+  overflow: hidden;
+}
+
+.trent {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trent i {
+  color: white;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.trent button {
+  background-color: rgb(10, 111, 77);
+  border: none;
+  padding: 5px 40px;
+  margin-top: 10px;
+  border-radius: 30px 0 30px 0;
+  color: white;
+  transition: 0.4s;
+}
+
+.trent button:hover {
+  transform: scale(0.9);
+}
+p {
+  color: aliceblue;
+  font-size: 20px;
+}
+
+.img2 {
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(255, 1, 10, 0),
+      rgb(12, 26, 63)
+    ),
+    url(https://prium.github.io/grid/assets/img/group/pic-2.png);
+}
+
+.img3 {
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(255, 1, 10, 0),
+      rgb(12, 26, 63)
+    ),
+    url(https://prium.github.io/grid/assets/img/group/pic-3.png);
+}
+
+.img4 {
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(255, 1, 10, 0),
+      rgb(12, 26, 63)
+    ),
+    url(https://prium.github.io/grid/assets/img/group/pic-4.png);
+}
+
+.img5 {
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(255, 1, 10, 0),
+      rgb(12, 26, 63)
+    ),
+    url(https://prium.github.io/grid/assets/img/group/pic-6.png);
+}
+
+.img6 {
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(255, 1, 10, 0),
+      rgb(12, 26, 63)
+    ),
+    url(https://prium.github.io/grid/assets/img/group/pic-7.png);
+}
+
+.img7 {
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(255, 1, 10, 0),
+      rgb(12, 26, 63)
+    ),
+    url(https://prium.github.io/grid/assets/img/group/pic-8.png);
+}
+
+.img8 {
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(255, 1, 10, 0),
+      rgb(12, 26, 63)
+    ),
+    url(https://prium.github.io/grid/assets/img/group/pic-9.jpg);
+}
+
+.img9 {
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(255, 1, 10, 0),
+      rgb(12, 26, 63)
+    ),
+    url(https://prium.github.io/grid/assets/img/group/pic-16.jpg);
+}
+
+.img10 {
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(255, 1, 10, 0),
+      rgb(12, 26, 63)
+    ),
+    url(https://prium.github.io/grid/assets/img/group/pic-17.jpg);
+}
+
+.img13 {
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(255, 1, 10, 0),
+      rgb(12, 26, 63)
+    ),
+    url(https://prium.github.io/grid/assets/img/group/pic-17.jpg);
+}
+
+.img11 {
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(255, 1, 10, 0),
+      rgb(12, 26, 63)
+    ),
+    url(https://prium.github.io/grid/assets/img/group/pic-19.png);
+}
+
+.img12 {
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(255, 1, 10, 0),
+      rgb(12, 26, 63)
+    ),
+    url(https://prium.github.io/grid/assets/img/group/pic-20.png);
+}
+
+.aside-left {
+  display: flex;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 110px;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(249, 251, 253);
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.aside-left:hover i {
+  color: #315fe9;
+}
+
+.aside-left:hover p {
+  color: #315fe9;
+}
+
+.aside-left i {
+  font-size: 30px;
+  color: #869ab8;
+}
+
+.aside-left p {
+  color: #869ab8;
+  text-align: center;
+}
+
+
+.color1 {
+  color: black !important;
+}
+
+
+@media (min-width: 992px) {
+  aside {
+    width: var(--aside-width);
+  }
+
+  main {
+    left: var(--aside-width);
+    width: calc(100vw - var(--aside-width));
+  }
+}
